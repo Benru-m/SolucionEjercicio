@@ -93,3 +93,17 @@ str(mammals)
 str(Animals2)
 ```
 
+### c.Muestra los nombres de las filas y las columnas (rownames, colnames).
+
+Mostramos el nombre de las filas y columnas de cada conjunto.
+
+```{r}
+colnames(mammals)
+rownames(mammals)
+```
+```{r}
+colnames(Animals2)
+rownames(Animals2)
+```
+
+Como se puede apreciar, ambas poseen las mismas columnas (*body* y *brain*), pero en cuanto a filas, aunque ambos conjuntos poseen filas con el mismo nombre, estas no coinciden en posición, y además **Animals2** tiene 3 filas que no comparten nombre con ninguna de **mammals**.
