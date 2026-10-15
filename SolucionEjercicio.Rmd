@@ -131,3 +131,9 @@ length(NonCommonAnimals)
 NonCommonAnimals
 ```
 Midiendo la longitud de la variable *NonCommonAnimals* obtenemos que hay 11 animales que no están en ambos conjuntos, siendo algunos mamíferos y otros dinosaurios.
+
+### f. Determina las diferencia entre los animales que no aparecen en ambos conjuntos.
+
+Notamos que entre los 11 animales que no están en ambos conjuntos hay dos casos diferentes. Mientras que los dinosaurios realmente aparecen en un único conjunto (como sabemos por la ayuda, aparecen sólo en **Animals2**), los mamíferos sí están presentes en ambos conjuntos, pero los nombres que utilizan en cada conjunto tienen pequeñas diferencias como errores ortográficos que provocan que se consideren como animales distintos.
+
+Por tanto, realmente sólo hay 3 animales que no aparecen en ambos conjuntos de datos y para contar correctamente los animales que comparten los conjuntos y los que no sería necesario unificar la nomenclatura de dichos mamíferos.
