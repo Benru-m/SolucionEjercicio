@@ -120,3 +120,14 @@ Como hay filas que no se comparten, guardaremos en la variable *commonAnimals* u
 commonAnimals <- intersect(rownames(mammals),rownames(Animals2))
 commonAnimals
 ```
+
+### e. Usa *setdiff* para averiguar qué animales no están en ambos conjuntos. ¿Cuántos son?. ¿Qué tipo de animales son?
+Ahora veamos cuáles **no** están en ambos. Como *setdiff* crea una lista con los elementos del vector del primer argumento que no están en el del segundo argumento, la utilizaremos dos veces.
+
+```{r}
+NonCommonAnimals <- union(setdiff(rownames(mammals),rownames(Animals2)),
+                          setdiff(rownames(Animals2),rownames(mammals)))
+length(NonCommonAnimals)
+NonCommonAnimals
+```
+Midiendo la longitud de la variable *NonCommonAnimals* obtenemos que hay 11 animales que no están en ambos conjuntos, siendo algunos mamíferos y otros dinosaurios.
