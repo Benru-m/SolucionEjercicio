@@ -49,10 +49,47 @@ help(mammals)
 
 vemos que **mammals** incluye 62 instancias, cada una correspondiendo a una especie de mamífero terrestre distinta, y 2 variables, el peso corporal en kilos y el peso del cerebro en gramos.
 
-Análogamente, con 
+Análogamente, con
 
 ```{r}
 help(Animals2)
 ```
 
 vemos que **Animals2** incluye 65 instancias, cada una de una especie de animal terrestre distinto, y las mismas variables que **mammals**. También señala que este conjunto es la unión de **mammals** y **Animals** (del paquete **robustbase**), por lo que nuestros conjuntos comparten la mayoría de las instancias.
+
+### b.Usa las funciones *dim, head, tail, str* para una primera visión de los conjuntos de datos.
+
+Con *dim* obtenemos el número de filas y el número de columnas de los conjuntos de datos, que coinciden con lo mencionado antes.
+
+```{r}
+dim(mammals)
+dim(Animals2)
+```
+
+Por su parte, *head* muestra las primeras seis filas del conjunto.
+
+```{r}
+head(mammals)
+```
+```{r}
+head(Animals2)
+```
+
+Análogamente, *tail* muestra las seis últimas.
+
+```{r}
+tail(mammals)
+```
+```{r}
+tail(Animals2)
+```
+
+Por último, *str* nos muestra información variada sobre el conjunto: el número de filas y columnas, los nombres de las columnas, el tipo de dato que contienen y los valores que toman.
+
+```{r}
+str(mammals)
+```
+```{r}
+str(Animals2)
+```
+
