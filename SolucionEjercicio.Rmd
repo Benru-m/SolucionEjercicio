@@ -71,6 +71,7 @@ Por su parte, *head* muestra las primeras seis filas del conjunto.
 ```{r}
 head(mammals)
 ```
+
 ```{r}
 head(Animals2)
 ```
@@ -80,6 +81,7 @@ Análogamente, *tail* muestra las seis últimas.
 ```{r}
 tail(mammals)
 ```
+
 ```{r}
 tail(Animals2)
 ```
@@ -89,6 +91,7 @@ Por último, *str* nos muestra información variada sobre el conjunto: el númer
 ```{r}
 str(mammals)
 ```
+
 ```{r}
 str(Animals2)
 ```
@@ -101,9 +104,19 @@ Mostramos el nombre de las filas y columnas de cada conjunto.
 colnames(mammals)
 rownames(mammals)
 ```
+
 ```{r}
 colnames(Animals2)
 rownames(Animals2)
 ```
 
-Como se puede apreciar, ambas poseen las mismas columnas (*body* y *brain*), pero en cuanto a filas, aunque ambos conjuntos poseen filas con el mismo nombre, estas no coinciden en posición, y además **Animals2** tiene 3 filas que no comparten nombre con ninguna de **mammals**.
+Como se puede apreciar, ambas poseen las mismas columnas (*body* y *brain*), pero en cuanto a filas, aunque ambos conjuntos poseen filas con el mismo nombre, estas no coinciden en posición, y además hay nombres que no comparten.
+
+### d. Usa la función intersect y almacena en la variable *commonAnimals* los aminales que aparezcan en ambos conjuntos.
+
+Como hay filas que no se comparten, guardaremos en la variable *commonAnimals* una lista con los nombres de las especies que **sí** están presentes en ambas listas.
+
+```{r}
+commonAnimals <- intersect(rownames(mammals),rownames(Animals2))
+commonAnimals
+```
