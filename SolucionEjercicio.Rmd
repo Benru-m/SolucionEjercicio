@@ -29,3 +29,30 @@ language:
     remark: 'Nota: '
     solution: 'Solución. '
 ---
+
+Vamos a utilizar los conjuntos de datos **mammals** del paquete **MASS** y **Animals2** del paquete **robustbase**, por lo que primero cargamos dichos paquetes y guardamos los conjuntos en el *Environment*.
+
+```{r}
+library(MASS)
+library(robustbase)
+data(mammals)
+data(Animals2)
+```
+
+### a. Mira las características de ambos conjuntos usando la ayuda.
+
+Para mirar la ayuda podemos usar la función *help*, que nos abrirá la página de ayuda del conjunto indicado. Así, ejecutando
+
+```{r}
+help(mammals)
+```
+
+vemos que **mammals** incluye 62 instancias, cada una correspondiendo a una especie de mamífero terrestre distinta, y 2 variables, el peso corporal en kilos y el peso del cerebro en gramos.
+
+Análogamente, con 
+
+```{r}
+help(Animals2)
+```
+
+vemos que **Animals2** incluye 65 instancias, cada una de una especie de animal terrestre distinto, y las mismas variables que **mammals**. También señala que este conjunto es la unión de **mammals** y **Animals** (del paquete **robustbase**), por lo que nuestros conjuntos comparten la mayoría de las instancias.
